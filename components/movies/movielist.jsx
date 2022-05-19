@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 function Movielist({ results }) {
     console.log(results);
     return (
@@ -10,7 +10,7 @@ function Movielist({ results }) {
                         <div className="col-xl-2 col-md-4 col-sm-6" key={results.id}>
                             <div className="movie-item text-center">
                                 <div className="movie-thumb">
-                                    <img src={`https://image.tmdb.org/t/p/w500${results.poster_path}`} width={200} height={300} alt="" />
+                                    <Image src={`https://image.tmdb.org/t/p/w500${results.poster_path}`} width={200} height={300} alt="" />
                                 </div>
                                 <div className="movie-content">
                                     <h4 className="movie-title">{results.original_title || results.original_name}</h4>

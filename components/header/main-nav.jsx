@@ -24,25 +24,25 @@ function MainNav() {
                                 </NavLink>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <a className="dropdown-item" href="/">أفلام عربي</a>
+                                        <Link className="dropdown-item" href="/">أفلام عربي</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">أفلام أجنبي</a>
+                                        <Link className="dropdown-item" href="/">أفلام أجنبي</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">أفلام أنيميشن</a>
+                                        <Link className="dropdown-item" href="/">أفلام أنيميشن</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">أفلام أسيوية</a>
+                                        <Link className="dropdown-item" href="/">أفلام أسيوية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">أفلام هندية</a>
+                                        <Link className="dropdown-item" href="/">أفلام هندية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">أفلام تركية</a>
+                                        <Link className="dropdown-item" href="/">أفلام تركية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">أفلام وثائقية</a>
+                                        <Link className="dropdown-item" href="/">أفلام وثائقية</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -52,25 +52,25 @@ function MainNav() {
                                 </NavLink>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <a className="dropdown-item" href="/">مسلسلات عربية</a>
+                                        <Link className="dropdown-item" href="/">مسلسلات عربية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">مسلسلات أجنبية</a>
+                                        <Link className="dropdown-item" href="/">مسلسلات أجنبية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">مسلسلات أنمي</a>
+                                        <Link className="dropdown-item" href="/">مسلسلات أنمي</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">مسلسلات كورية</a>
+                                        <Link className="dropdown-item" href="/">مسلسلات كورية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">مسلسلات هندية</a>
+                                        <Link className="dropdown-item" href="/">مسلسلات هندية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">مسلسلات تركية</a>
+                                        <Link className="dropdown-item" href="/">مسلسلات تركية</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">مسلسلات مدبلجة</a>
+                                        <Link className="dropdown-item" href="/">مسلسلات مدبلجة</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -80,13 +80,13 @@ function MainNav() {
                                 </NavLink>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <a className="dropdown-item" href="/">رمضان 2022</a>
+                                        <Link className="dropdown-item" href="/">رمضان 2022</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">رمضان 2021</a>
+                                        <Link className="dropdown-item" href="/">رمضان 2021</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">رمضان 2020</a>
+                                        <Link className="dropdown-item" href="/">رمضان 2020</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -96,13 +96,13 @@ function MainNav() {
                                 </NavLink>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <a className="dropdown-item" href="/">الأول</a>
+                                        <Link className="dropdown-item" href="/">الأول</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">الثاني</a>
+                                        <Link className="dropdown-item" href="/">الثاني</Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="/">الثالث</a>
+                                        <Link className="dropdown-item" href="/">الثالث</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -111,10 +111,10 @@ function MainNav() {
                 </div>
                 <div className="register">
                     <Link href="/">
-                        <a href="" className="btn btn-primary">تسجيل</a>
+                        <Link href="" className="btn btn-primary">تسجيل</Link>
                     </Link>
                     <Link href="/">
-                        <a href="" className="btn btn-primary">تسجيل حساب</a>
+                        <Link href="" className="btn btn-primary">تسجيل حساب</Link>
                     </Link>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import Link from 'next/link'
+import Image from 'next/image'
 function Slide() {
     const slides = [
         {
@@ -66,17 +67,17 @@ function Slide() {
                         {slides.map(slide => (
                             <div className="slide-item" key={slide.id}>
                                 <div className="layer"></div>
-                                <img src={slide.image} width={226} height={350} alt={slide.name} />
+                                <Image src={slide.image} width={226} height={350} alt={slide.name} />
                                 <div className="pref">
-                                    <a className='btn' href='/'>
+                                    <Link className='btn' href='/'>
                                         <h4 className='text-white'>{slide.title}</h4>
-                                    </a>
+                                    </Link>
                                     <p className='desc text-white'>movie description</p>
                                 </div>
                                 <div className="play absolute top-0">
-                                    <a href='/'>
+                                    <Link href='/'>
                                         <i className="fas fa-play"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
