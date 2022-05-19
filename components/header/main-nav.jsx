@@ -110,11 +110,11 @@ function MainNav() {
                     </div>
                 </div>
                 <div className="register">
-                    <Link href="/">
-                        <Link href="" className="btn btn-primary">تسجيل</Link>
+                    <Link className="btn btn-primary" href="/">
+                        <Link href="/">تسجيل</Link>
                     </Link>
-                    <Link href="/">
-                        <Link href="" className="btn btn-primary">تسجيل حساب</Link>
+                    <Link className="btn btn-primary" href="/">
+                        <Link href="/">تسجيل حساب</Link>
                     </Link>
                 </div>
             </div>

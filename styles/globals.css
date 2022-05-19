@@ -152,20 +152,6 @@ h1, h2, h3, h4, h5, h6{
     z-index: 2;
 }
 /* Slider */
-.slick-next{
-    right: 20px !important;
-    color:#29b0ef !important;
-    /* padding: 10px !important; */
-}
-.slick-prev{
-    left: 20px !important;
-    z-index: 1;
-}
-.slick-next:before, .slick-prev:before{
-    color: #000 !important;
-    padding: 10px;
-    background-color: #1900fd;
-}
 .slide-item{
     position: relative;
     transition: .3s all;
@@ -178,6 +164,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 10px;
+    z-index: 1;
 }
 .slide-item:hover .pref{
     bottom : 0 !important;
@@ -190,6 +177,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-size: 1.2rem;
     display: none;
+    z-index: 1;
 }
 .slide-item:hover .play{
     display: block !important;
@@ -215,6 +203,7 @@ h1, h2, h3, h4, h5, h6{
     opacity: .6;
     display: none;
     transition: .2s all;
+    z-index: 1;
 }
 .slide-item:hover .layer{
     display: block;
