@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 function Movielist({ results }) {
+    console.log(results)
     return (
         <section className="movies">
             <div className="container-fluid">
@@ -12,8 +13,18 @@ function Movielist({ results }) {
                                 <div className="movie-thumb">
                                     <Image src={`https://image.tmdb.org/t/p/w500${results.poster_path}`} width={200} height={300} alt="" />
                                 </div>
-                                <div className="movie-content">
-                                    <h4 className="movie-title">{results.original_title || results.original_name}</h4>
+                                <div className="back">
+                                    <Link href={`/movie/${results.id}`}>
+                                        <h6 className="movie-title">{results.original_title || results.original_name}</h6>
+                                    </Link>
+                                    <div className="data">
+                                        <span className="date">{results.release_date || results.first_air_date}</span>
+                                        <span className="rate">{results.vote_average}</span>
+                                        <p className="lang">اللغة: {results.original_language}</p>
+                                        <Link href={`/movie/${results.id}`}>
+                                            <a className="view btn btn-primary" href="">View Movie</a>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

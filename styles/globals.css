@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6{
 ::-webkit-scrollbar-thumb{
     background-color: #1900fd;
 }
+body{
+    perspective: 1000px;
+}
 /* NAVBAR */
 .navbar{
     padding-top: 0;
@@ -150,6 +153,8 @@ h1, h2, h3, h4, h5, h6{
 .slide-item{
     position: relative;
     transition: .3s all;
+    display: flex !important;
+    flex-direction: column;
 }
 .pref{
     position: absolute;
@@ -293,13 +298,64 @@ h1, h2, h3, h4, h5, h6{
 }
 .movie-item{
     margin-bottom: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.movie-item:hover{
+    transform: rotateY(180deg)
+}
+.movie-thumb{
+    z-index: 2;
+}
+.movie-thumb img{
+    backface-visibility: hidden;
 }
 .movie-title{
-    font-size: 1.2rem;
     font-family: Cairo;
     font-weight: 600;
     color: #fff;
     margin-top: 5px;
+    cursor: pointer;
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: #33365a;
+    padding: 10px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.movie-title{
+    font-family: Cairo;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.data{
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.date{
+    margin-bottom: 15px;
+}
+.rate{
+    background-color: #03243f;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.view{
+    margin-top: 30px;
 }
 /* Years */
 .years{
