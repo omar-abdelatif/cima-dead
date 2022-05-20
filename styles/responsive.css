@@ -1,0 +1,27 @@
+@media (max-width: 1400px){
+    /* Slider */
+    .slide-item img{
+        width: 275px;
+    }
+}
+@media (max-width: 1200px){
+    /* Slider */
+    .slide-item img{
+        width: 240px;
+    }
+}
+@media(max-width: 1024px){
+    /* Slider */
+    .slide-item img{
+        width: 210px;
+    }
+}
+@media (max-width: 991px){
+    /* Navbar */
+    .menu-btn{
+        display: block;
+    }
+    .padding{
+        padding: 25px !important;
+    }
+}

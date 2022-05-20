@@ -22,24 +22,6 @@ h1, h2, h3, h4, h5, h6{
 ::-webkit-scrollbar-thumb{
     background-color: #1900fd;
 }
-.relative{
-    position: relative;
-}
-.absolute{
-    position: absolute;
-}
-.top-0{
-    top: 0;
-}
-.left-0{
-    left: 0;
-}
-.right-0{
-    right: 0;
-}
-.bottom-0{
-    bottom: 0;
-}
 /* NAVBAR */
 .navbar{
     padding-top: 0;
@@ -98,6 +80,10 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-weight: 600;
 }
+.dropdown-item a{
+    color: #fff;
+    text-decoration: none;
+}
 .cima{
     color: #fff;
 }
@@ -129,10 +115,19 @@ h1, h2, h3, h4, h5, h6{
 }
 .register a{
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: #33365a;
     border: none;
     margin-right: 15px;
+    color: #fff;
+    padding: 7px 20px;
+    font-family: ae_AlArabiya;
+    text-decoration: none;
+    transition: .3s;
+}
+.register a:hover{
+    background-color: #6871ce;
+    color: #fff;
 }
 .register a:focus{
     box-shadow: none !important;
@@ -211,22 +206,6 @@ h1, h2, h3, h4, h5, h6{
 .slick-slide img{
     display: inline !important;
 }
-/* MOVIES */
-.movies{
-    background-color: #33365ad5;
-    padding: 20px;
-    padding-top: 50px;
-}
-.movie-item{
-    margin-bottom: 30px;
-}
-.movie-title{
-    font-size: 1.2rem;
-    font-family: Cairo;
-    font-weight: 600;
-    color: #fff;
-    margin-top: 5px;
-}
 /* Categories */
 .categories{
     background-color: #29b0ef;
@@ -247,7 +226,7 @@ h1, h2, h3, h4, h5, h6{
     cursor: pointer;
     transition: .4s all;
     padding: 0 15px;
-    color: #000;
+    color: #fff;
 }
 .cat-item:hover{
     color: #fff;
@@ -305,6 +284,22 @@ h1, h2, h3, h4, h5, h6{
     font-size: 1.5em;
     padding: 5px 15px;
     z-index: 1;
+}
+/* MOVIES */
+.movies{
+    background-color: #33365ad5;
+    padding: 20px;
+    padding-top: 50px;
+}
+.movie-item{
+    margin-bottom: 30px;
+}
+.movie-title{
+    font-size: 1.2rem;
+    font-family: Cairo;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5px;
 }
 /* Years */
 .years{
@@ -391,14 +386,4 @@ footer p a{
 footer p a:hover{
     color: #33365a !important;
     letter-spacing: 2px;
-}
-/* RESPONSIVE */
-@media (max-width: 991px){
-    /* Navbar */
-    .menu-btn{
-        display: block;
-    }
-    .padding{
-        padding: 25px !important;
-    }
 }

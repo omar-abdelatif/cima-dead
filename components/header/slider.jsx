@@ -1,8 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import Link from 'next/link'
-import { arrow } from '@popperjs/core'
-// import Image from 'next/image'
+import Image from 'next/image'
 function Slide({ results }) {
     // const slides = [
     //     {
@@ -97,7 +96,7 @@ function Slide({ results }) {
                         {results.map(result => (
                             <div className="slide-item" key={result.id}>
                                 <div className="layer"></div>
-                                <img src={`https://image.tmdb.org/t/p/w500${result.poster_path}`} width={212} height={320} alt={result.original_title || result.original_name} />
+                                <img src={`https://image.tmdb.org/t/p/w500${result.poster_path}`} width={230} height={320} alt={result.original_title || result.original_name} />
                                 <div className="pref">
                                     <Link className='btn' href='/'>
                                         <h4 className='text-white'>{result.original_title || result.original_name}</h4>
