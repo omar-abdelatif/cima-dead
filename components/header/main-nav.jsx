@@ -14,7 +14,7 @@ function MainNav() {
                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
-                        <ul className="navbar-nav mb-2 mb-lg-0">
+                        <ul className="navbar-nav">
                             <li className="nav-item">
                                 <NavLink className="nav-link" href="/">الرئيسية</NavLink>
                             </li>

@@ -4,14 +4,13 @@ import LogoNav from '../components/header/logonav';
 import MainNav from '../components/header/main-nav';
 import Slider from './../components/header/slider';
 import Category from './../components/header/category';
-import Movielist from './../components/movies/movielist';
+import Movielist from './movie/index';
 import Years from '../components/years';
 import Footer from '../components/footer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useEffect } from 'react';
 import requests from '../utils/requests';
-
+import { useEffect } from 'react';
 export default function Home({ results }) {
 	useEffect(() => {
 		typeof document !== 'undefined' ? require('../node_modules/bootstrap/dist/js/bootstrap.bundle.min') : null;
@@ -47,7 +46,7 @@ export default function Home({ results }) {
 			{/* Results */}
 			<Movielist results={results} />
 			{/* Footer */}
-			<Years />
+			<Years results={results} />
 			<Footer />
 		</React.Fragment>
 	)

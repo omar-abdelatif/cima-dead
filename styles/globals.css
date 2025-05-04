@@ -353,6 +353,12 @@ body{
 .view{
     margin-top: 30px;
 }
+/* Movie Details */
+.movie_backdrop{
+    width: 100% !important;
+    height: 500px !important;
+    position: relative !important;
+}
 /* Years */
 .years{
     padding: 50px 0;
